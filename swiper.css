@@ -1,0 +1,180 @@
+@font-face{
+    font-family: "TT Lakes";
+    src: local("TT Lakes Regular"),url(TT\ Lakes\ Neue\ Trial\ Condensed\ Regular.ttf) format(woff);
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  
+}
+
+.body{
+    
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: #f8f8f8;
+    color: #7e7e82;
+}
+
+.title{ 
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 24px;
+    color: #7e7e82;
+    padding: 20px;
+    background-color: #FFFFFF;
+    
+
+}
+
+.swiper-container{
+
+ display: grid;
+ width: 200px;
+
+ padding: 10px 0;
+ text-align: center;
+ margin-left: 10px;
+
+
+
+}
+.swiper-slide {
+   width: 90%;
+    
+    gap: 10px;
+   align-items: center;
+   justify-content: center;
+    background-color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+   
+ 
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+.brend__list{
+    display: none;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8
+}
+.brend__list-item{
+    width: 200px;
+    height: 50px;
+    gap: 10px;
+   border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #7e7e82;
+    text-align: center;
+    background-color: none;
+    margin: 10px 10px;
+}
+.brand-img  {
+    width: 80px;
+    height: 50px;
+    margin-right: 30px;
+    margin-left: 10px;
+    background-color:none
+     ;
+}
+.brend__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.brand__button{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+#toggle__button { 
+align-items: flex-start;
+justify-content: flex-start;
+   margin-bottom: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #FFFFFF;
+    color: #7e7e82;
+    border-radius: 5px;
+    
+   
+
+}
+.brand__bi {
+  
+    width: 24px;
+    height: 24px;
+    
+    background-color:transparent;
+   
+}
+@media(min-width:768px){
+    .brend__list{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+     
+   
+
+    }
+    .swiper-container{
+        display: none;
+    }
+    .brand__button{
+        display: block;
+    }
+}
+@media (min-width: 1120px) {
+    .brend__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.brend__list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color:#FFFFFF;
+    border-radius: 8px;
+}
+
+.brend__list-item img {
+    max-width: 50px;
+    height: auto;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+/* Скрытые элементы */
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.brend__list.expanded .hidden {
+    display: flex;
+    opacity: 1;
+}
+
+.brand__button {
+    display: block;
+        width: 150px;
+     
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: #FFFFFF;
+        color: #7e7e82;
+        border-radius: 5px;
+    }
+    
